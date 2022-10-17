@@ -2,6 +2,7 @@
 
 :root {
     --header-Bg: goldenrod;
+    --option-Menu: rgb(240, 240, 240);
 }
 
 html {
@@ -16,18 +17,49 @@ body {
 .nav {
     display: flex;
     background-color: var(--header-Bg);
-    /* align-items: baseline; */
+    justify-content: space-between;
 }
 .logo {
     background-color: var(--header-Bg);
     display: inline-block;
-    padding: 1rem 1rem;
-    margin-left: 100%;
-    max-width: 15rem;
+    max-width: 10rem;
+}
+.rigth, .left {
+    max-width: 50%;
+}
+.rigth {
+    max-height: 10rem;
+    list-style: none;
 }
 .fa-burger{
+    display: inline;
     position: absolute;
-    font-size: 20rem;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    font-size: 5rem;
 }
-
+.menu-hambur{
+    background-color: var(--option-Menu);
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 7rem;
+}
+.tipos {
+    display: block;
+    padding: 0 1rem;
+}
+.item {
+    background-color: var(--option-Menu);
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.8rem;
+    font-style: italic;
+    padding-bottom: 1.5rem;
+}
+.active {
+    display: none;;
+}
 /* Media querys for diferents displays */
