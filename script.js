@@ -1,12 +1,13 @@
-const menu = document.getElementsByClassName("menu-hambur");
-const hambuger = document.getElementsByClassName("activeMenu");
+const menu = document.querySelector("#menuHam");
+const hambuger = document.querySelector(".activeMenu");
 
 function main() {
-    hambuger.onclick = switchMenu;
+    hambuger.addEventListener('click', switchMenu);
 }
 function switchMenu() {
+    menu.classList.toggle("active");
+    menu.classList.toggle("menu-hambur");
     console.log("Toggle");
-    menu.classList.toggle(".active");
 }
 
 main();
